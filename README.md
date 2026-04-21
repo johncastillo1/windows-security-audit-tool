@@ -1,8 +1,25 @@
-Write-Host "Starting Security Audit..."
+# Automated Windows Security Audit and Hardening Tool
 
-.\scripts\firewall_check.ps1
-.\scripts\defender_check.ps1
-.\scripts\user_check.ps1
-.\scripts\password_policy_check.ps1
+## Project Overview
+This project is a PowerShell-based security auditing tool designed to check common Windows security settings. It helps identify potential vulnerabilities by scanning system configurations such as firewall status, Windows Defender, user accounts, and password policies.
 
-Write-Host "Audit Complete."
+---
+
+## Features
+- Checks Windows Firewall status
+- Verifies Windows Defender is enabled
+- Lists local user accounts
+- Checks password policy settings
+- Designed for basic Windows security auditing and system hardening awareness
+
+---
+
+## How to Run
+
+### Step 1: Open PowerShell as Administrator
+Search "PowerShell", right-click, and select **Run as Administrator**
+
+### Step 2: Navigate to project folder
+Example:
+```powershell
+cd Desktop\windows-security-audit-tool
